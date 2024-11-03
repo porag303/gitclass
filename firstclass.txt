@@ -37,6 +37,7 @@ Git Initialization for Tracking Files and Directories:
                 git add files_name.extension
 
     4) Git commit -- means git will capture a snap and generate a hash.
+        ***This is the Local Repo Stage of git Architecture******
 
                 git commit -m "Message"             [m- means message] 
 
@@ -47,5 +48,73 @@ Git Initialization for Tracking Files and Directories:
                 6 -> Ownership Permission
                 4-> Group Permission
                 4-> Others Permission
+
+    5) Check the git Status again: Lets make difference
+
+                git status
+
+   6) Now check the track / commit process info:
+
+                git log
+
+Next Step:
+
+
+    1) Touch another file named touch second.txt
+    2) git add second.txt
+    3) git commit -m "Second File added"
+    4) git log
+
+Step 2) cat .git/
+
+    3) Check the HEAD file where the git is indicate now:
+
+            cat .git/HEAD
+                or
+            git branch 
+                or
+            git log
+
+
+ GIT OBJECT TYPES: There are 4 tyoes of git object
+
+    1) blob  - means regular file/container of content/hold file & permission etc
+    2) Tree
+    3) Commit
+    4) Tag
+
+* Check the object types
+        
+             tree .git/object
+
+List of files
+
+            git rev-list --objects --all
+
+Hash types
+
+            git cat-file -t hash_tag   -> 
+            git cat-file -p hash_tag   -> Check the object types of content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
