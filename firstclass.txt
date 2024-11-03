@@ -1,0 +1,51 @@
+First Class
+
+Install git:
+
+            sudo apt update
+            sudo apt install git
+
+Check the version:
+
+    
+             git --version
+
+
+Git Architecture: git architecture has 4 stages:
+
+               1) Working Directory
+               2) Staging Area
+               3) Local Repo
+               4) Remote Repo
+
+Git Initialization for Tracking Files and Directories:
+
+
+    1) First, we need to initialize a folder to monitor or let be known to git:
+    
+                git init 
+
+    2) After initialization, you can check the git status. In this case, the files' color will be red because git will monitor the files but not track file changes. 
+       git will monitor or known to be directory as git monitor: 
+        ****This is the Working Area Stage of git Architecture******
+                
+                git status
+
+    3) Now files are ready to be added to git tracking. For this, you need to add files or directories to track.
+        ****This is the Staging Area Stage of git Architecture******
+
+                git add files_name.extension
+
+    4) Git commit -- means git will capture a snap and generate a hash.
+
+                git commit -m "Message"             [m- means message] 
+
+    git will return the messages: 100644
+
+                10 -> Regular File
+                0 -> Sticky bit / Special Permission
+                6 -> Ownership Permission
+                4-> Group Permission
+                4-> Others Permission
+
+
